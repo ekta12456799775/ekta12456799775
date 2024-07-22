@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="casino.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5aa53be3f9.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8153804d22.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+    <style>
+      /* Slider */
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-slider
+{
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  /* -webkit-tap-highlight-color: transparent; */
+}
+
+.slick-list
+{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus
+{
+  outline: none;
+}
+.slick-list.dragging
+{
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+  display: table;
+  content: '';
+}
+.slick-track:after
+{
+  clear: both;
+}
+.slick-loading .slick-track
+{
+  visibility: hidden;
+}
+
+.slick-slide
+{
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+  float: right;
+}
+.slick-slide img
+{
+  display: block;
+}
+.slick-slide.slick-loading img
+{
+  display: none;
+}
+.slick-slide.dragging img
+{
+  pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+  display: block;
+}
+.slick-loading .slick-slide
+{
+  visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+  </style>
+
+  </head>
+  <body>
+   <nav class="navbar navbar-expand-lg col-12">
+        <img src="c:\Users\B2G-Marketing\Downloads\logo (1).png " class="img-fluid logo">
+        <button class="navbar-toggler button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item me-3">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+             
+              <li class="nav-item  me-3 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Expertise
+                </a>
+    
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item me-3 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Insights
+                </a>
+              <li class="nav-item me-3">
+                <a class="nav-link " aria-disabled="true">About Us</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link " aria-disabled="true">Career</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link " aria-disabled="true">Gallery</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link " aria-disabled="true">Contact us</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+      <!-- ---------------------------------------navbar end------------------------------------------------------------- -->
+
+      <img src="c:\Users\B2G-Marketing\Downloads\About-Us-1.png" class="img-fluid">
+      <div class="row justify-content-center at" >
+        <div class="col-md-4 p-5">
+            <h6 class="innovation">Innovation, Imagination and a dash of Probability is what we are made of!</h6>
+            <p class="as">As a global leader in the gaming industry, we offer state of the art services through our B2B solutions for operators and providers while strengthening our position as the world’s number one casino gaming solution provider and continue to evolve globally.</p>
+
+        </div>
+        <div class="col-md-4 p-5 in">
+            <h6 class="innovation">OUR VISION</h6>
+            <p class="as">Creating, maintaining and developing key relationships with our long-standing partners that include many of the world’s largest and most well-known gaming brands by delivering the best technology is a key focus for our business.</p>
+        </div>
+        <div class="col-md-4 p-5">
+            <h6 class="innovation">OUR MISSION</h6>
+            <p class="as">As an innovative and fast-growing B2B company, we enable development at all levels of game by empowering landbased titles and IT/non-gaming companies to bring them into online through innovation, data and technology.</p>
+        </div>
+      </div>
+      <div class="in">
+        <h4 class="social">PG-CONNECT</h4>
+        <h6 class="innovate">The company brings up an interactive RGS commonly known as PG-CONNECT.</h6>
+        <p class="py-2 text-center col-md-9 col-sm-10 mx-auto">
+            PG-CONNECT is a gaming server software platform with RNG Certified by BMM Test Labs as a reimagining of building games with multi RTP, multi brand and multi game customization.
+        </p>
+    
+
+        <div class="row justify-content-center align-items-center py-5 ina">
+            <div class="col-md-4 px-5">
+                <p class="p">  
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    Full API driven to provide granular control over games, game engine and game server.
+                </p>
+                <p class="p">  
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    Manages multiple games from multiple game providers.
+                </p>
+                <p class="p">  
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    Single web based admin console to get detailed logs
+                </p>
+                <p class="p">  
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    Any single player fixed odds can be modeled
+                </p>
+                <p class="p">  
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    Full traceability and audit ability.
+                </p>
+                <p class="p">  
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    Rule engine to manage promotion and player bets.
+                </p>
+            </div>
+
+              <div class="col-md-3"><img src="c:\Users\B2G-Marketing\Downloads\About-Us-2.png" class="img-fluid"></div>
+
+
+              <div class="col-md-4 px-5">
+                <p class="p">  
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    Full API driven to provide granular control over games, game engine and game server.
+                </p>
+                <p class="p">  
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    Manages multiple games from multiple game providers.
+                </p>
+                <p class="p">  
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    Single web based admin console to get detailed logs
+                </p>
+                <p class="p">  
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    Any single player fixed odds can be modeled
+                </p>
+                <p class="p">  
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    Full traceability and audit ability.
+                </p>
+                <p class="p">  
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    Rule engine to manage promotion and player bets.
+                </p>
+            </div>
+
+              
+            </div>
+            <h6 class="innovate">MEET THE VISIONARIES</h6>
+            <h4 class="social text-align-center">BOARD OF DIRECTORS</h4>
+            <div class="row justify-content-center col-12">
+
+             
+                <div class="col-md-3 col-6">
+
+                    <img src="c:\Users\B2G-Marketing\Downloads\Vinay.jpg" class="img-fluid vinay">
+                    <h4 class="social">VINAY TRIPATHI</h4>
+                    <h6 class="founder">CO-FOUNDER &CHAIRMAN</h6>
+
+
+
+                </div>
+
+               
+                <div class="col-md-3 col-6">
+
+                    <img src="c:\Users\B2G-Marketing\Downloads\Vinay.jpg" class="img-fluid vinay">
+                    <h4 class="social">VINAY TRIPATHI</h4>
+                    <h6 class="founder">CO-FOUNDER &CHAIRMAN</h6>
+
+
+                </div>
+
+             
+                <div class="col-md-3 col-6">
+
+                    <img src="c:\Users\B2G-Marketing\Downloads\Vinay.jpg" class="img-fluid vinay">
+                    <h4 class="social">VINAY TRIPATHI</h4>
+                    <h6 class="founder">CO-FOUNDER &CHAIRMAN</h6>
+
+
+
+                </div>
+
+                <div class="col-md-3 col-6">
+
+                    <img src="c:\Users\B2G-Marketing\Downloads\Vinay.jpg" class="img-fluid vinay">
+                    <h4 class="social">VINAY TRIPATHI</h4>
+                    <h6 class="founder">CO-FOUNDER &CHAIRMAN</h6>
+
+
+                </div>
+                <h4 class="social">CORE TEAM</h4>
+              
+                 <section class="customer-logos slider bg-gray">
+                    <div class="slide">
+                         <a class="link-text" href="pankaj-sharma.php">
+                  <img class="img-fluid boder-redios-sec vinay" src="c:\Users\B2G-Marketing\Downloads\Ekta.png" width="250">
+                  <h4 class="iner-sub-home text-center chief">PANKAJ SHARMA</h4>
+                  <h6 class="text-center varun">STUDIO MANAGER</h6>
+                  </a>
+                  </a>
+                    </div>
+                    <div class="slide">
+                        <a class="link-text" href="ekta-kapatia.php">
+                  <img class="img-fluid boder-redios-sec vinay" src="c:\Users\B2G-Marketing\Downloads\Ekta.png" width="250" >
+                  <h4 class="iner-sub-home text-center chief">EKTA Tripathi</h4>
+                  <h6 class="text-center varun">BUSINESS HEAD</h6>
+                  </a>
+                    </div>
+                    <div class="slide">
+                          <a class="link-text" href="dalip-kumar.php">
+                  <img class="img-fluid boder-redios-sec vinay" src="c:\Users\B2G-Marketing\Downloads\Ekta.png" width="250">
+                  <h4 class="iner-sub-home text-center chief">DALIP KUMAR</h4>
+                  <h6 class="text-center varun">CREATIVE HEAD</h6>
+                  </a>
+                    </div>
+                    <div class="slide">
+                        <a class="link-text" href="pankaj-singh.php">
+                  <img class="img-fluid boder-redios-sec vinay" src="c:\Users\B2G-Marketing\Downloads\Ekta.png" width="250">
+                  <h4 class="iner-sub-home text-center chief">PANKAJ SINGH</h4>
+                  <h6 class="text-center varun">GENERAL MANAGER</h6>
+                  </a>
+                    </div>
+                    <div class="slide">
+                        <a class="link-text" href="varun-sharma.php">
+                  <img class="img-fluid boder-redios-sec vinay" src="c:\Users\B2G-Marketing\Downloads\Ekta.png" width="250">
+                  <h4 class="iner-sub-home text-center chief">VARUN SHARMA</h4>
+                  <h6 class="text-center varun">CHIEF OPERATING OFFICER</h6>
+                  </a>
+                    </div>
+                 </section>
+              </div>
+            </div>
+            </div>
+    
+
+
+ 
+   
+
+
+
+      <!------------------------------------------------- footer section start-------------------------------------------- -->
+      <div class="row justify-content-center ps-5 bg-black">
+        <div class="footer">
+
+         <div class="col-md-3 col-10">
+           <h2 class="abouta">About</h2>
+           <p class="pet">Probability Gaming started</p>
+           <p class="pet">its journey a decade ago</p> 
+           <p class="pet">as a truly global software</p>
+           <p class="pet">development company</p>
+           <a href="#">Read More</a>
+         </div>
+
+
+         <div class="col-md-3 col-10">
+           <h2 class="abouta">Expertise</h2>
+           <p class="pet">
+             Land Based Casino</p>
+             
+             <p class="pet">Online Real Money</p>
+             
+             <p class="pet">Skill Based Games</p>
+             
+             <p class="pet">Social Casino</p>
+             
+             <p class="pet">Careers</p>
+           </div>
+           
+             <div class="col-md-3 col-10">
+               <h2 class="abouta">Insights</h2>
+               <p class="pet">Game Area Panel</p>
+                 
+                 <p class="pet">Industry We Serve</p>
+                 
+                 <p class="pet">Licenses and Certificates</p>
+                 
+                 <p class="pet">Passion For Games</p>
+                 
+                 <p class="pet">Services Prog</p>
+                 
+                 <p class="pet">Top and Featured Games</p>
+
+             </div>
+
+             <div class="col-md-3 col-10">
+               <h2 class="abouta">Contact Us</h2>
+               <p class="pet">Office Address</p>
+                 <p class="pet">5th Floor, SB Tower, 1A/1,</p><p class="pet">Film City, Sector 16A,</p><p class="pet">Noida, NCR New Delhi,</p><p class="pet"> India. Email: info@progaindia.com</p>
+                 <p class="pet">Email info@progaindia.com</p>
+             </div> 
+           </div>
+           <hr class="hrnew">
+           <div class="bg-black">
+             <h6 class=" col-md-12 line">Copyright @ PROBABILITY GAMING</h6>
+           </div> 
+
+         </div>
+         <!--------------------------------------footer section end------------ ---------------------------------------- ----->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+<script>
+  $(document).ready(function(){
+  $('.customer-logos').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [{
+          breakpoint: 768,
+          settings: {
+              slidesToShow: 3
+          }
+      }, {
+          breakpoint: 520,
+          settings: {
+              slidesToShow: 2
+          }
+      }]
+  });
+});
+</script>
+

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="swipper.js"></script>
+    <script src="https://kit.fontawesome.com/8153804d22.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!-- Swiper Css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Swiper Css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*--- Testimonial Section Start ---*/
+
+.testimonial-section {
+  margin-top: 90px;
+}
+
+.testimonial-heading {
+  font-size: 40px;
+  font-family: var(--font-family-heading--);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.services-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-img {
+  width: 138px;
+}
+
+.services-icons {
+  width: 100%;
+  object-fit: fill;
+}
+
+.testimonial-name {
+  font-size: 24px;
+  font-family: var(--font-family-heading--);
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.testimonial-role {
+  font-size: 16px;
+  font-family: var(--font-family-details--);
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  padding: 5px 0 15px 0;
+  text-align: center;
+}
+
+.fa-star {
+  color: #ff7a00;
+  font-size: 23px;
+  padding-bottom: 10px;
+}
+
+.testimonial-cards-text {
+  font-size: 26px;
+  font-style: italic;
+  font-family: var(--font-family-details--);
+  font-weight: 500;
+  color: #484848;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .testimonial-cards-text br {
+    display: none;
+  }
+
+  .testimonial-cards-text {
+    font-size: 18px;
+  }
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.swiper {
+  padding: 70px 0;
+}
+.progres-bar {
+  width: 3rem;
+  background-color: #d9d9d9;
+  margin-right: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.open {
+  background-color: black;
+  width: 10rem;
+}
+
+  </style>
+</head>
+<body>
+    <!------------------------------------------- navbar start-------------------------------------------------------------------------  -->
+    <nav class="navbar navbar-expand-lg bg-dark ">
+        <img src="c:\Users\B2G-Marketing\Downloads\floorplanindia-logo.jpg" class="ms-3 img-fluid floorpan">
+        <div class="container-fluid">
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item me-3">
+                <a class="nav-link BAR " aria-current="page" href="#">Home</a>
+              </li>
+             
+              <li class="nav-item  me-3 dropdown">
+                <a class="nav-link BAR" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+              </li>
+              <li class="nav-item me-3 dropdown">
+                <a class="nav-link BAR" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+              <li class="nav-item me-3">
+                <a  class="nav-link BAR " aria-disabled="true">WhyFloorplan</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link BAR " aria-disabled="true">Products</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link BAR " aria-disabled="true">ContactUS</a>
+              </li>
+          
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+      <!-- -----------------------------------------navbar end ----------------------------------------------------------->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000" data-pause="false" >
+    <div class="carousel-inner kitchen">
+      <div class="carousel-item active">
+    
+        <img src="c:\Users\B2G-Marketing\Downloads\u-shape-modular-kitchen.jpg" class="img-fluid"> 
+      </div>
+      <div class="carousel-item">
+        <img src="c:\Users\B2G-Marketing\Downloads\u-shape-modular-kitchen.jpg" class="img-fluid"  alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="c:\Users\B2G-Marketing\Downloads\u-shape-modular-kitchen.jpg" class="img-fluid" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+
+    <form class="form-wrapper col-md-3 class">
+        <div class="form-card clt">
+          <input
+            class="form-input"
+            type="text"
+            name="full_name"    
+            required="required"
+          />
+          <label class="form-label" for="full_name">Full Name</label>
+        </div>
+    
+        <div class="form-card">
+          <input
+            class="form-input"
+            type="email"
+            name="email"
+            required="required"
+          />
+          <label class="form-label" for="email">Email</label>
+        </div>
+    
+        <div class="form-card">
+          <input
+            class="form-input"
+            type="number"
+            name="phone_number"
+            required="required"
+          />
+          <label class="form-label" for="phone_number">Phone number</label>
+        </div>
+    
+        <div class="form-card">
+          <textarea
+            class="form-textarea"
+            maxlength="20"
+            rows="1"
+            name="phone_number"
+            required="required"
+          ></textarea>
+          <label class="form-textarea-label" for="phone_number"
+            >Address</label
+          >
+        </div>
+        <div class="btn-wrap">
+          <button> Submit </button>
+        </div>
+      </form>
+
+
+
+  </div>
+
+ <div class="row justify-content-center">
+<p><h4 class="us">About us</h4></p>
+<div class="col-md-10 text-align-center"><p class="solution">Floor-plan an Interior Solution Company, incorporated in 2005, is promoted by The Team of Professionally Qualified Persons. To Achieve Our Vision, We have Partnered With Leading Brands e.g. PERGO, EGGER, LAMIWOOD & many more. UPVC Doors & Windows use VEKA/PLASTONE Profiles. Our Company has Plans to Specialize in all Kinds of interior Solutions by adding innovation and Practical Products to Our Existing Range.</p></div>
+</div>
+
+
+<div class="row justify-content-between">
+    <div class="col-md-4">
+       <p class="wood"><i class="fa-solid fa-square"></i> Laminated Wood Flooring</p>
+</div>
+<div class="col-md-4">
+    <p class="wood"><i class="fa-solid fa-square"></i> UPVC Doors & Windows</p>
+</div>
+<div class="col-md-4">
+    <p class="wood"><i class="fa-solid fa-square"></i> Outdoor decking Wood & Wall Cladding</p>
+</div>
+</div>
+
+
+
+<div class="row justify-content-between">
+    <div class="col-md-4">
+       <p class="wood"><i class="fa-solid fa-square"></i>Engineered & Solid Wood Flooring</p>
+</div>
+<div class="col-md-4">
+    <p class="wood"><i class="fa-solid fa-square"></i> Modular Kitchen & Wardrobes</p>
+</div>
+<div class="col-md-4">
+    <p class="wood"><i class="fa-solid fa-square"></i> Carpet Tiles & Artificial Grass</p>
+</div>
+</div>
+
+
+<div class="row justify-content-between">
+    <div class="col-md-4">
+       <p class="wood"><i class="fa-solid fa-square"></i> Vinyl Flooring & Sports Flooring</p>
+</div>
+<div class="col-md-4">
+    <p class="wood"><i class="fa-solid fa-square"></i> Wall papers & wall Panelings</p>
+</div>
+<div class="col-md-4">
+    <p class="wood"><i class="fa-solid fa-square"></i> Pleated Mosquito Mesh</p>
+</div>
+</div>
+
+<div class="bg-dark avtr">
+    <div>
+        <h4 class="product">
+        Products & Services
+    </h4>
+    <br><br>
+</div>
+<div class="row justify-content-center col-md-10 mx-auto">
+    <div class="col-md-3 single-img animation">
+            <img src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="Avatar" class="image">
+            <div class="img-overlay">
+              <div class="text">Palm Beach <br><span>Florida</span></div> </div>
+    </div>
+    <div class="col-md-3 single-img animation">
+        <img src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="Avatar" class="image">
+        <div class="img-overlay">
+          <div class="text">Palm Beach <br><span>Florida</span></div> </div>
+        </div>
+    <div class="col-md-3 single-img animation">
+        <img src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="Avatar" class="image">
+        <div class="img-overlay">
+          <div class="text">Palm Beach <br><span>Florida</span></div> </div>
+        </div>
+
+
+
+    </div>
+
+
+<div class="row justify-content-center col-md-10 mx-auto">
+    <div class="col-md-3 single-img animation">
+            <img src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="Avatar" class="image">
+            <div class="img-overlay">
+              <div class="text">Palm Beach <br><span>Florida</span></div> </div>
+    </div>
+    <div class="col-md-3 single-img animation">
+        <img src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="Avatar" class="image">
+        <div class="img-overlay">
+          <div class="text">Palm Beach <br><span>Florida</span></div> </div>
+        </div>
+    <div class="col-md-3 single-img animation">
+        <img src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="Avatar" class="image">
+        <div class="img-overlay">
+          <div class="text">Palm Beach <br><span>Florida</span></div> </div>
+        </div>
+  </div>
+
+  <div class="row justify-content-center col-md-10 mx-auto">
+    <div class="col-md-3 single-img animation">
+            <img src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="Avatar" class="image">
+            <div class="img-overlay">
+              <div class="text">Palm Beach <br><span>Florida</span></div> </div>
+    </div>
+    <div class="col-md-3 single-img animation">
+        <img src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="Avatar" class="image">
+        <div class="img-overlay">
+          <div class="text">Palm Beach <br><span>Florida</span></div> </div>
+        </div>
+    <div class="col-md-3 single-img animation">
+        <img src="https://i.postimg.cc/9fnXGD2W/1.jpg" alt="Avatar" class="image">
+        <div class="img-overlay">
+          <div class="text">Palm Beach <br><span>Florida</span></div> </div>
+        </div>
+  </div>
+  </div>
+
+<div class="col-md-12">
+<p><h4 class="us">Why Floor Plan</h4></p>
+<p class="some">Some of the qualities that differentiate us from others are:</p>
+<div class="col-md-12 col-sm-12">
+    <p class="our ms-5"><i class="fa-solid fa-star"></i> Our after sales service, we are always here to help.</p>
+    <p class="our ms-5"><i class="fa-solid fa-star"></i> Proper Installation methods and procedures.</p>
+    <p class="our ms-5"><i class="fa-solid fa-star"></i>  We always aim to give you a timely delivery of supplies.</p>
+    <p class="our ms-5"><i class="fa-solid fa-star"></i>Our vast experience and unmatched expertise of the business gives us an edge over others.</p>
+    <p class="our ms-5"><i class="fa-solid fa-star"></i>Our vast experience and unmatched expertise of the business gives us an edge over others.</p>
+    <p class="our ms-5"><i class="fa-solid fa-star"></i>  We offer a personalized customer care service.</p>
+</div>
+</div>
+
+
+<div class="projects col-md-12">
+  <div class="port col-md-5 col-sm-10">
+    <h1 class="by">Notable Projects Executed by Us</h1>
+    <h3 class="office">Offices and Commercial Projects</h3>
+    <div class="row justify-content-space-between">
+  <div class="col-md-6"> 
+<ul>
+  <p>⊙DI Gurgaon</p>
+  <p>⊙CDA Projects Ltd.,</p>
+  <p>⊙Citibank Guest House, South City, Gurgaon</p>
+  <p>⊙Creative Dimension Retail Ltd., Delhi</p>
+  <p>⊙ Design Tech, Delhi</p>
+  <p> ⊙Globrin Systems & solutions, Gurgaon</p>
+  <p>⊙Hamilton Hotel, Delhi</p>
+</ul> 
+ </div>
+
+
+ <div class="col-md-6 col-sm-10">
+  <ul>
+    <p>⊙DI Gurgaon</p>
+    <p>⊙CDA Projects Ltd.,</p>
+    <p>⊙Citibank Guest House, South City, Gurgaon</p>
+    <p>⊙Creative Dimension Retail Ltd., Delhi</p>
+    <p>⊙ Design Tech, Delhi</p>
+    <p> ⊙Globrin Systems & solutions, Gurgaon</p>
+    <p>⊙Hamilton Hotel, Delhi</p>
+    </ul>
+ </div>
+ </div>
+</div>
+
+
+<div class="port col-md-5 col-sm-10">
+  <h1 class="by my-2">Appartment Projects in Gurgaon</h1>
+  <h3 class="also">We have also executed a large number of residential projects in Gurugram.</h3>
+  <div class="row justify-content-space-between">
+    <div class="col-md-6">
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+    </div>
+    <div class="col-md-6">
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+      <p>◍ Ambience Island</p>
+   </div>
+  </div>
+
+
+</div>
+</div>
+<section class="testimonial-section">
+  <!--Testimonial Section Start-->
+  <div class="container">
+    <h2 class="testimonial-heading">testimonial</h2>
+    <div class="row">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="item swiper-slide">
+            <div class="services-content">
+              <div class="services-inner">
+                <figure class="position-relative testimonial-img">
+                  <img src="https://www.ilm-foundation.com/wp-content/uploads/2016/11/testimonial-circle-PaulWoodcock-1.png" alt="testimonial" class="img-fluid services-icons" />
+                </figure>
+              </div>
+              <div class="services-card-content text-center">
+                <h4 class="testimonial-name mb-0">Elisa burger</h4>
+                <h6 class="testimonial-role mb-0">customer</h4>
+                  <div class="testimonial-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="testimonial-cards-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry. Lorem Ipsum has been the industry's standard dummy text <br> ever since the 1500s, when an unknown printer took a galley of type and <br>scrambled it to make a type specimen book.
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="item swiper-slide">
+            <div class="services-content">
+              <div class="services-inner">
+                <figure class="position-relative testimonial-img">
+                  <img src="https://www.ilm-foundation.com/wp-content/uploads/2016/11/testimonial-circle-PaulWoodcock-1.png" alt="testimonial" class="img-fluid services-icons" />
+                </figure>
+              </div>
+              <div class="services-card-content text-center">
+                <h4 class="testimonial-name mb-0">Rilli Turner</h4>
+                <h6 class="testimonial-role mb-0">customer</h4>
+                  <div class="testimonial-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="testimonial-cards-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry. Lorem Ipsum has been the industry's standard dummy text <br> ever since the 1500s, when an unknown printer took a galley of type and <br>scrambled it to make a type specimen book.
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="item swiper-slide">
+            <div class="services-content">
+              <div class="services-inner">
+                <figure class="position-relative testimonial-img">
+                  <img src="https://www.ilm-foundation.com/wp-content/uploads/2016/11/testimonial-circle-PaulWoodcock-1.png" alt="testimonial" class="img-fluid services-icons" />
+                </figure>
+              </div>
+              <div class="services-card-content text-center">
+                <h4 class="testimonial-name mb-0">Ashley Jenners</h4>
+                <h6 class="testimonial-role mb-0">customer</h4>
+                  <div class="testimonial-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="testimonial-cards-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry. Lorem Ipsum has been the industry's standard dummy text <br> ever since the 1500s, when an unknown printer took a galley of type and <br>scrambled it to make a type specimen book.
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="item swiper-slide">
+            <div class="services-content">
+              <div class="services-inner">
+                <figure class="position-relative testimonial-img">
+                  <img src="https://www.ilm-foundation.com/wp-content/uploads/2016/11/testimonial-circle-PaulWoodcock-1.png" alt="testimonial" class="img-fluid services-icons" />
+                </figure>
+              </div>
+              <div class="services-card-content text-center">
+                <h4 class="testimonial-name mb-0">Scarlate Jonshon</h4>
+                <h6 class="testimonial-role mb-0">customer</h4>
+                  <div class="testimonial-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="testimonial-cards-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry. Lorem Ipsum has been the industry's standard dummy text <br> ever since the 1500s, when an unknown printer took a galley of type and <br>scrambled it to make a type specimen book.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="progress-container">
+          <span class="progres-bar"></span>
+          <span class="progres-bar"></span>
+          <span class="progres-bar"></span>
+          <span class="progres-bar"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/a2f3cdbc85.js" crossorigin="anonymous"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  grabCursor: true
+});
+
+function updateProgressBar() {
+  var activeIndex = swiper.realIndex;
+  var progressBars = document.querySelectorAll(".progres-bar");
+  progressBars.forEach(function (progressBar, index) {
+    if (index === activeIndex) {
+      progressBar.classList.add("open");
+    } else {
+      progressBar.classList.remove("open");
+    }
+  });
+}
+
+// Call updateProgressBar function when page loads
+updateProgressBar();
+
+swiper.on("slideChange", function () {
+  updateProgressBar();
+});
+
+// Add click event listeners to progress bars
+var progressBars = document.querySelectorAll(".progress-bar");
+progressBars.forEach(function (progressBar, index) {
+  progressBar.addEventListener("click", function () {
+    swiper.slideTo(index);
+  });
+});
+  </script>
+
+<footer>
+  <div class="source">
+  <div>
+    <img src="c:\Users\B2G-Marketing\Downloads\floorplanindia-logo.jpg" class="img-fluid im">
+    <hr class="nw">
+  </div>
+   <div class="row justify-content-center">
+    <div class="col-md-4">
+      <h3 class="abt ms-5"> About Us</h3>
+      <p class=" ms-5 house">House of Laminated & Wooden Flooring, Carpet Tiles, Artificial Grass, Deck Flooring, Vinyl Flooring, Sports Floors, uPVC Windows & Doors, Modular Kitchens, Wardrobes, Exterior HPL/Wood/WPC Cladding & Window Coverings.</p>
+      <form class="ms-5" >
+        <div>
+        <input type="email" name="email" placeholder="Enter your Email" class="ty">
+        <button type="submit">
+          <i class="fa-solid fa-square-arrow-up-right arrow"></i>
+        </button>
+        </div>
+
+      </form>
+     <br><br>
+      <ul>
+        <a href="https://www.facebook.com/fplanindia " class="india">
+          <i class="fa-brands fa-facebook-f face"></i>
+          facebook
+        </a>
+      
+
+        <a href="https://www.facebook.com/fplanindia" class="india">
+          <i class="fa-brands fa-instagram face"></i>
+          Instagram
+        </a>
+      </ul>
+    </div>
+    
+    <div class="col-md-8 row justify-content-center">
+      <div class="col-md-3 mx-auto">
+        <h3 class="abt">Quick Links</h3>
+        <p><a href="#home" class="home">Home</a></p>
+        <p><a href="#home" class="home">Abouts</a></p>
+        <p><a href="#home" class="home">Product</a></p>
+        <p><a href="#home" class="home">Why floor plan </a></p>
+        <p><a href="#home" class="home">Projects</a></p>
+
+
+
+      </div>
+      
+      
+      <div class="col-md-5 mx-auto">
+        <h3 class="abt">Contact Us</h3>
+        <p>
+          <a href="#" class="home">
+          <i class="fa-solid fa-phone-flip face"></i>
+
+          +91 9911048090
+        </a>
+      </p>
+
+      <p>
+        <a href="#" class="home">
+        <i class="fa-regular fa-envelope-open face"></i>
+        floorplanggn@gmail.com
+       
+      </a>
+    </p>
+
+    <p>
+      <a href="#" class="home">
+      <i class="fa-solid fa-location-dot face"></i>
+      LG-8, Mega Mall, DLF-I, Gurgaon 122001
+     
+    </a>
+  </p>
+
+
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</html>

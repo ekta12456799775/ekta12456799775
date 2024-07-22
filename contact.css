@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Orbitron:wght@700&display=swap");
+
+body {
+  font-family: var(--font-family-default);
+  font-size: var(--fs-300);
+  color: var(--clr-dark);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  padding: 0 20px;
+  margin: 0;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+h1 {
+  margin: 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+.d-grid {
+  display: grid;
+}
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-end {
+  text-align: end;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.pf-footer {
+  margin-bottom: 9rem;
+}
+
+.pf-footer h1 {
+  font-family: "Gugi", sans-serif;
+  font-size: 8rem;
+}
+
+.pf-footer .pf-line {
+  width: 100%;
+}
+
+.footer-contents a {
+  margin: 20px 0;
+  color: #000000;
+  font-size: 24px;
+  font-family: "Gugi";
+}
